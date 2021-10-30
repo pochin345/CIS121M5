@@ -1,6 +1,6 @@
 import unittest
 
-from ..task import is_secret_word
+from task import is_secret_word
 
 
 # tests correct and incorrect word
