@@ -1,0 +1,93 @@
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1.5px solid black;
+  border-collapse: collapse;
+  text-align:center;
+  padding:.5em;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1em;
+}
+p{
+    font-size:1.5em;
+}
+li{
+    font-size:1.5em;
+}
+h1 {
+    font-size:2em;
+}
+h2{
+    font-size:1.7em;
+}
+/* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+</style>
+</head>
+<h1>Using logical operators</h1>
+
+<h2>Task</h2>
+<p>A wine company is giving away a botle of wine<br>
+to anyone whose name is John or Mary<br>
+as long as that person is drinking age<br>
+(age greater than or equal 21)</p>
+<p>Use the functions provided to solve the problem</p>
+<h2>Tests</h2>
+<table>
+    <tr>
+        <th>Name<br> (input)</th>
+        <th>Age<br>(input)</th>
+        <th>Winner<br>(output) </th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>21</td>
+        <td>True</td>
+    </tr>
+    <tr>
+        <td>Mary</td>
+        <td>21</td>
+        <td>True</td>
+    </tr>
+        <tr>
+        <td>John</td>
+        <td>20</td>
+        <td>False</td>
+    </tr>
+    <tr>
+        <td>Mary</td>
+        <td>21</td>
+        <td>False</td>
+    </tr>
+    <tr>
+        <td>Johnny</td>
+        <td>21</td>
+        <td>False</td>
+    </tr>
+    <tr>
+        <td>Mary Ellen</td>
+        <td>21</td>
+        <td>False</td>
+    </tr>
+</html>

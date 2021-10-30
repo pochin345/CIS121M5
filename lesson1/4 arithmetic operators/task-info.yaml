@@ -1,0 +1,59 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    Please enter original price: Please enter discount percent: Discounted price = 90.0
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 218
+    length: 8
+    placeholder_text: multiply
+    initial_state:
+      length: 8
+      offset: 218
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: '*'
+  - offset: 244
+    length: 6
+    placeholder_text: divide
+    initial_state:
+      length: 6
+      offset: 244
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: /
+  - offset: 289
+    length: 8
+    placeholder_text: subtract
+    initial_state:
+      length: 8
+      offset: 289
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: '-'
+  text: |
+    #   Author:
+    #   Date:
+    #
+    #   Calculate discount price
+
+    original_price = float(input("Please enter original price: "))
+    discount_percent = float(input("Please enter discount percent: "))
+
+    discount_amount = original_price multiply discount_percent divide 100
+    discounted_price = original_price subtract discount_amount
+
+    print("Discounted price =", discounted_price)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

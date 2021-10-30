@@ -1,0 +1,71 @@
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1.5px solid black;
+  border-collapse: collapse;
+  text-align:center;
+  padding:.5em;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1em;
+}
+p{
+    font-size:1.5em;
+}
+li{
+    font-size:1.5em;
+}
+h1 {
+    font-size:2em;
+}
+h2{
+    font-size:1.7em;
+}
+</style>
+</head>
+<h1>Imprecision of float</h1>
+<p>Trying to represent a number with a decimal point<br>
+as a binary number results in imprecise numbers.</p>
+<p>For example. suppose I were try to multiply 1.3 by 1.3<br>
+In decimal that would result in 1.69<br>
+Not so as this simple exercise will show you.</p>
+<p>Enter 1.3 at the prompt<br>
+    the program multiplies the number by itself<br>
+you get 1.6900000000000002 when not rounded<br>
+1.69 when rounded</p>
+<p>If you want to know why,
+    <a href="https://timothybramlett.com/floating-point-imprecision.html#:~:text=What%20is%20floating%20point%20imprecision,have%20trouble%20storing%20the%20number%20. ">
+        click here</a></p>
+<p>We're more interested in how to fix it:</p>
+<h2>round()</h2>
+<p>The <b>round</b> function:</p>
+<ul>
+    <li>fixes the imprecision of the <b>float</b> type</li>
+    <li>rounds the number to a specified number of decimal places<br>
+    typically 2, if you're working with currency</li>
+</ul>
+<h2>Task</h2>
+<p>Enter various numbers, and notice the difference<br>
+    between not rounded and rounded numbers<br>
+    when the number is multiplied by itself.
+</p>
+<table>
+    <tr>
+        <th>Number<br> (input)</th>
+        <th>Not rounded</th>
+        <th>Rounded to 2 decimals</th>
+    </tr>
+    <tr>
+        <td>1.3</td>
+        <td>1.6900000000000002</td>
+        <td>1.69</td>
+    </tr>
+        <tr>
+        <td>1.25</td>
+        <td>1.5625</td>
+            <td>1.56</td>
+    </tr>
+</table>
+</html>

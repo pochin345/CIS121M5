@@ -1,0 +1,10 @@
+title: Python Course3
+language: English
+summary: |-
+  Python course.
+  Created: Sep 13, 2020, 9:12:06 AM.
+programming_language: Python
+environment: unittest
+content:
+- lesson1
+mode: Study

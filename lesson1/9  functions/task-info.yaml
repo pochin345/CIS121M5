@@ -1,0 +1,77 @@
+type: edu
+files:
+- name: task.py
+  visible: true
+  placeholders:
+  - offset: 611
+    length: 26
+    placeholder_text: Return whether word matches secret_word or not
+    initial_state:
+      length: 46
+      offset: 611
+    initialized_from_dependency: false
+    selected: true
+    status: Failed
+    encrypted_possible_answer: return word == secret_word
+  text: |
+    #   Author:
+    #   Date:
+    #
+    #   Functions
+
+    #  example
+    #  processing
+    def calculate_discount_price(original_price, discount_percent):
+        discount_amount = original_price * discount_percent / 100
+        discounted_price = original_price - discount_amount
+        return discounted_price
+
+
+    # input
+    my_original_price = float(input("Please enter original price: "))
+    my_discount_percent = float(input("Please enter discount percent: "))
+
+    # output
+    print("Discounted price =", calculate_discount_price(my_original_price, my_discount_percent))
+    print()
+
+
+    # task
+    # processing
+    def is_secret_word(word):
+        secret_word = "secret"
+        Return whether word matches secret_word or not
+
+
+    # input
+    my_secret_word = input("Please enter the secret word: ")
+    # output
+    print(is_secret_word(my_secret_word))
+  learner_created: false
+- name: tests/test_task.py
+  visible: false
+  text: |
+    import unittest
+
+    from ..task import is_secret_word
+
+
+    # tests correct and incorrect word
+    class TestCase(unittest.TestCase):
+        def test_add(self):
+            self.assertEqual(is_secret_word("secret"), True, msg="if user enters 'secret', must be True")
+
+        def test_add1(self):
+            self.assertEqual(is_secret_word("s"), False, msg="if user does not enters 'secret', must be False")
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/__init__.py
+  visible: false
+  learner_created: false
+status: Failed
+feedback:
+  message: Error
+  time: Sat, 30 Oct 2021 05:56:18 UTC
+record: -1

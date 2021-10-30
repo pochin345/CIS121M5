@@ -1,0 +1,101 @@
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1.5px solid black;
+  border-collapse: collapse;
+  text-align:center;
+  padding:.5em;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1em;
+}
+p{
+    font-size:1.5em;
+}
+li{
+    font-size:1.5em;
+}
+h1 {
+    font-size:2em;
+}
+h2{
+    font-size:1.7em;
+}
+</style>
+</head>
+<h1>Comparison Operators</h1>
+<p>Now we're going to talk about a new variable type: <b>Boolean</b><br>
+    Boolean variable can have only two values: <b>True</b> or <b>False</b>.<br></p>
+<p>Boolean variables are the result of comparisons<br>
+    Here are the comparison operators:</p>
+<table>
+    <tr>
+        <td>==</td><td>the operands are equal</td>
+    </tr>
+    <tr>
+        <td>!=</td><td>the operands are notequal</td>
+    </tr>    <tr>
+        <td>>=</td><td>the left operand is<br> greater than or equal the right operand</td>
+    </tr>
+    <tr>
+        <td><=</td><td>the left operand is<br> less than or equal the right operand</td>
+    </tr>
+    <tr>
+        <td>></td><td>the left operand is<br> strictly greater than the right operand</td>
+    </tr>
+    <tr>
+        <td>></td><td>the left operand is<br> sytictly less than the right operand</td>
+    </tr>
+
+</table>
+
+<h2>Numeric comparisons</h2>
+
+<p>Numeric comparisons compare<br> the value of the two operands.</p>
+<h2>String Comparisons</h2>
+
+<p>While numeric comparisons are pretty straightforward,<br>
+    string comparisons are a little tricky.</p>
+<p>String comparisons take place character by character,<br>
+    using ASCII (Unicode) values .</p>
+<p>So to compare "3" to "200",
+    you first compare "3" to "2"<br>
+    since "3" (ASCII value 51) is greater than "2" (ASCII value 50),<br>
+    you are done.     "3"  > "200"</p>
+
+<p>It probably makes more sense if you compare "B" to "ABC"<br>
+    "B" > "ABC" makes intuitive sense</p>
+
+<p>It gets slightly crazy if you compare "b" to "B"<br>
+"b" is greater than "B".<br>
+Why? The ASCII value of "b" is 98, but "B" is 66</p>
+<h2>Task</h2>
+<p>Enter various numbers, and notice the difference<br>
+    between string and integer comparison<br>
+    when the number is multiplied by itself.
+</p>
+<table>
+    <tr>
+        <th>Number<br> (input)</th>
+        <th>Another number</th>
+        <th>String compare</th>
+        <th>Integer compare</th>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>200</td>
+        <td>True</td>
+        <td>False</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>300</td>
+        <td>False</td>
+        <td>False</td>
+    </tr>
+
+</table>
+</html>

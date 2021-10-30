@@ -1,0 +1,33 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    Hello world
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 41
+    length: 26
+    placeholder_text: Display to standard output
+    initial_state:
+      length: 26
+      offset: 41
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: print
+  text: |
+    #   Author:
+    #   Date:
+    #
+    #   Hello World
+
+    Display to standard output ("Hello world")
+  learner_created: false
+status: Unchecked
+record: -1

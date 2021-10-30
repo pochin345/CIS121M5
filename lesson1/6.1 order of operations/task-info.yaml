@@ -1,0 +1,56 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    Please enter cost of meal: Please enter tip percent: Please enter number people in your party: tip amount = 4.8
+    split = 9.59
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 280
+    length: 18
+    placeholder_text: calulation for tip
+    initial_state:
+      length: 18
+      offset: 280
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: cost_meal * tip_percent
+  - offset: 323
+    length: 21
+    placeholder_text: calculation for split
+    initial_state:
+      length: 21
+      offset: 323
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: (cost_meal + tip_amount) / number_people
+  text: |+
+    #   Author:
+    #   Date:
+    #
+    #   Calculate tip and split
+
+    # input
+    cost_meal = float(input("Please enter cost of meal: "))
+    tip_percent = float(input("Please enter tip percent: "))
+    number_people = int(input("Please enter number people in your party: "))
+
+    # processing
+    tip_amount = round(calulation for tip / 100, 2)
+    split = round(calculation for split, 2)
+
+    # output
+    print("tip amount =", tip_amount)
+    print("split =", split)
+
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

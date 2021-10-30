@@ -1,0 +1,55 @@
+type: edu
+files:
+- name: task.py
+  visible: true
+  text: |
+    #   Author:
+    #   Date:
+    #
+    #   Comparisons
+    #
+    #   no coding necessary
+    #   just run the tests
+
+    # input
+    number1_string = input("Please enter an integer: ")
+    number2_string = input("Please enter another integer: ")
+    upperB = "B"
+    lowerB = "b"
+
+    # processing
+    number1_integer = int(number1_string)
+    number2_integer = int(number2_string)
+
+    #output
+    print()
+    print("As strings,", '"' + number1_string + '"', ">",
+          '"' + number2_string + '"', "is",
+          number1_string > number2_string)
+
+    print("As integers,", number1_integer, ">",
+          number2_integer, "is", number1_integer > number2_integer )
+    print()
+
+    print('The ASCII value of "' +  upperB + '" is', ord(upperB))
+    print('The ASCII value of "' + lowerB + '" is', ord(lowerB))
+    print(' so "' + lowerB + '" > "' + upperB + '" is', lowerB > upperB)
+  learner_created: false
+- name: tests/test_task.py
+  visible: false
+  text: |
+    import unittest
+
+    # todo: replace this with an actual test
+    class TestCase(unittest.TestCase):
+        def test_add(self):
+            self.assertEqual(3, 3, "always true")
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/__init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

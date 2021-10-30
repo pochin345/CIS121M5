@@ -1,0 +1,50 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    Enter number of dollars needed: Number of tens 4
+    Numbers of ones 3
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 161
+    length: 16
+    placeholder_text: integer division
+    initial_state:
+      length: 16
+      offset: 161
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: //
+  - offset: 217
+    length: 7
+    placeholder_text: modulus
+    initial_state:
+      length: 7
+      offset: 217
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: '%'
+  text: |
+    #   Author:
+    #   Date:
+    #
+    #   Calculate tens and ones
+
+    number_dollars_needed = int(input("Enter number of dollars needed: "))
+
+    number_tens = number_dollars_needed integer division 10
+    number_ones = number_dollars_needed modulus 10
+
+    print("Number of tens", number_tens)
+    print("Numbers of ones", number_ones)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

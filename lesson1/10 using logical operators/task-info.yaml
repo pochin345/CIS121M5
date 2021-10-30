@@ -1,0 +1,111 @@
+type: edu
+files:
+- name: task.py
+  visible: true
+  placeholders:
+  - offset: 82
+    length: 30
+    placeholder_text: John or Mary should be winners
+    initial_state:
+      length: 30
+      offset: 82
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: return name == winner_name1 or name == winner_name2
+  - offset: 165
+    length: 40
+    placeholder_text: age greater or equal 21 should be wiiner
+    initial_state:
+      length: 40
+      offset: 165
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: return age >= minimum_age
+  - offset: 238
+    length: 56
+    placeholder_text: Use is_match_name and is_minumum age to determine winner
+    initial_state:
+      length: 56
+      offset: 238
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: return is_match_name(name) and is_minimum_age(age)
+  text: |2
+
+    def is_match_name(name):
+        winner_name1 = "John"
+        winner_name2 = "Mary"
+        John or Mary should be winners
+
+
+    def is_minimum_age(age):
+        minimum_age = 21
+        age greater or equal 21 should be wiiner
+
+
+    def is_winner(name, age):
+        Use is_match_name and is_minumum age to determine winner
+
+
+    my_name = input("Please enter your name: ")
+    my_age = int(input("Please enter your age: "))
+
+    print("Do we have a winner? ", is_winner(my_name, my_age))
+  learner_created: false
+- name: tests/test_task.py
+  visible: false
+  text: |
+    import unittest
+
+    from ..task import is_minimum_age, is_match_name, is_winner
+
+
+    # todo: replace this with an actual test
+    class TestCase(unittest.TestCase):
+        def test_age_21(self):
+            self.assertEqual(is_minimum_age(21), True, msg="is_minimum_age age 21 should be True")
+
+        def test_age_20(self):
+            self.assertEqual(is_minimum_age(20), False, msg="is_minimum_age age 20 should be False")
+
+        def test_name_John(self):
+            self.assertEqual(is_match_name("John"), True, msg="is_match_name name John should be True")
+
+        def test_name_Mary(self):
+            self.assertEqual(is_match_name("Mary"), True, msg="is_match_name name Mary should be True")
+
+        def test_name_Johnny(self):
+            self.assertEqual(is_match_name("Johnny"), False, msg="is_match_name name Johnny should be False")
+
+        def test_name_MaryEllen(self):
+            self.assertEqual(is_match_name("Mary Ellen"), False, msg="is_match_name name Mary Ellen should be False")
+
+        def test_winner_John_21(self):
+            self.assertEqual(is_winner("John", 21), True, msg="is_winner: John, 21 should be a winner")
+
+        def test_winner_Mary_21(self):
+            self.assertEqual(is_winner("Mary", 21), True, msg="is_winner: Mary, 21 should be a winner")
+
+        def test_winner_John_20(self):
+            self.assertEqual(is_winner("John", 20), False, msg="is_winner: John, 20 should not be a winner")
+
+        def test_winner_Mary_20(self):
+            self.assertEqual(is_winner("Mary", 20), False, msg="is_winner: Mary, 20 should not be a winner")
+
+        def test_winner_Johnny_21(self):
+            self.assertEqual(is_winner("Johnny", 21), False, msg="is_winner: John, 20 should not be a winner")
+
+        def test_winner_MaryEllen_20(self):
+            self.assertEqual(is_winner("Mary Ellen", 20), False, msg="is_winner: Mary, 20 should not be a winner")
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/__init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

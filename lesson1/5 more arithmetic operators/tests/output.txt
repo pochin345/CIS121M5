@@ -1,0 +1,2 @@
+Enter number of dollars needed: Number of tens 4
+Numbers of ones 3

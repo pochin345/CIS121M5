@@ -1,0 +1,44 @@
+type: edu
+files:
+- name: task.py
+  visible: true
+  text: |+
+    #   Author:
+    #   Date:
+    #
+    #   imprecision of float
+    #
+    #   no coding necessary
+    #   just run the tests
+
+    # input
+    test_number = float(input("Please enter a number: "))
+
+    # process
+    multiply_by_itself = test_number * test_number
+
+    print("precision error (sometimes)",multiply_by_itself)
+    print("precise to 2 decimal places", round(multiply_by_itself,2))
+
+
+
+  learner_created: false
+- name: tests/test_task.py
+  visible: false
+  text: |
+    import unittest
+
+
+    # todo: replace this with an actual test
+    class TestCase(unittest.TestCase):
+        def test_add(self):
+            self.assertEqual(3, 3, msg="always true")
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/__init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

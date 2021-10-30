@@ -1,0 +1,3 @@
+Enter an integer less than 100: True
+Enter a string greater than ZZZ: True
+Enter an integer so not equals 20 is False: False

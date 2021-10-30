@@ -1,0 +1,53 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    Please enter a number: string 11 integer 2 decimal 2.0
+  learner_created: false
+- name: task.py
+  visible: true
+  placeholders:
+  - offset: 117
+    length: 29
+    placeholder_text: funtion to convert to integer
+    initial_state:
+      length: 29
+      offset: 117
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: int
+  - offset: 179
+    length: 50
+    placeholder_text: function to convert to number with a decimal point
+    initial_state:
+      length: 50
+      offset: 179
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: float
+  text: |
+    #   Author:
+    #   Date:
+    #
+    #   How does type matter?
+
+    number_string = input("Please enter a number: ")
+    number_integer = funtion to convert to integer(number_string)
+    number_decimal = function to convert to number with a decimal point(number_string)
+
+    number_string_add = number_string + number_string
+    number_integer_add = number_integer + number_integer
+    number_decimal_add = number_decimal + number_decimal
+
+    print("string", number_string_add,
+          "integer", number_integer_add,
+          "decimal", number_decimal_add)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

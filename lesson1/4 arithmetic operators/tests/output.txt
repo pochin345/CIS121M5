@@ -1,0 +1,1 @@
+Please enter original price: Please enter discount percent: Discounted price = 90.0

@@ -1,0 +1,35 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    Enter an integer less than 100: True
+    Enter a string greater than ZZZ: True
+    Enter an integer so not equals 20 is False: False
+  learner_created: false
+- name: main.py
+  visible: true
+  text: |+
+    #   Author:
+    #   Date:
+    #
+    #   Comparisons
+
+    #   These two comparisons should be True
+    less_than_100 = int(input("Enter an integer less than 100: "))
+    print(less_than_100 < 100)
+
+    greater_than_ZZZ = input("Enter a string greater than ZZZ: ")
+    print(greater_than_ZZZ > "ZZZ")
+
+    #   This comparisons should be False
+    not_equal_20 = int(input("Enter an integer so not equals 20 is False: " ))
+    print(not_equal_20 != 20)
+
+
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

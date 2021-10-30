@@ -1,0 +1,2 @@
+Please enter cost of meal: Please enter tip percent: Please enter number people in your party: tip amount = 4.8
+split = 9.59

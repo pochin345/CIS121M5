@@ -1,0 +1,44 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    What comedy troupe inspired Python's name? The comedy troupe that inspired Python was Monty Python
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 59
+    length: 23
+    placeholder_text: Get from standard input
+    initial_state:
+      length: 23
+      offset: 59
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: input
+  - offset: 130
+    length: 26
+    placeholder_text: Display to standard output
+    initial_state:
+      length: 26
+      offset: 130
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: print
+  text: |
+    #   Author:
+    #   Date:
+    #
+    #   Quiz Question
+
+    comedy_troupe = Get from standard input("What comedy troupe inspired Python's name? ")
+    Display to standard output("The comedy troupe that inspired Python was " + comedy_troupe)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

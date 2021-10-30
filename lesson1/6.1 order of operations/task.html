@@ -1,0 +1,72 @@
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1.5px solid black;
+  border-collapse: collapse;
+  text-align:center;
+  padding:.5em;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1em;
+}
+p{
+    font-size:1.5em;
+}
+li{
+    font-size:1.5em;
+}
+h1 {
+    font-size:2em;
+}
+h2{
+    font-size:1.7em;
+}
+</style>
+</head>
+<h1>Order of operations</h1>
+<p>In computing, as in math, multiplication and division<br>
+    are performed before addition and subtraction.</p>
+    <p>So 3 + 5 * 0 is 3 not 0 as since 5 * 0 is performed first.<br>
+        A lot of people don't understand this</p>
+        <p>But code within parentheses is performed first,<br>
+            which a lot of people do understand </p>
+<p>So when mixing multiplication and division with addition and subtraction,<br>
+    it's good form to use parenthesis, and not to rely on anyone reading your code to understand order of operations</p>
+<p>So code 3 + 5 * 0 as 3 + (5 * 0), if you want the normal order of operations. They are both the same, but the latter is more understandable</p>
+
+<h2>Task</h2>
+<p>Calculate <b>tip and split</b></p>
+<p>Prompt for:
+    <ul>
+        <li><b>cost of meal</b></li>
+        <li><b>tip percent</b> you want tp leave</li>
+        <li><b>the number of people</b> in your party</li>
+</ul>
+<p>Calculate<p>
+<ul>
+    <li><b>tip amount</b></li>
+    <li><b>how much each person pays</b><br>
+    (assume you split the bill equally)</li>
+
+</ul>
+
+<h2>Test</h2>
+<table>
+    <tr>
+        <th>cost of meal<br> (input)</th>
+        <th>tip percent<br>(input)</th>
+        <th>number of people<br>(input)</th>
+        <th>tip amount<br>(output)</th>
+        <th>split<br>(output)</th>
+    </tr>
+    <tr>
+        <td>23.98</td>
+        <td>20</td>
+        <td>3</td>
+        <td>20</td>
+        <td>3</td>
+    </tr>
+</table>
+</html>
